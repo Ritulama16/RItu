@@ -1,55 +1,100 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f7f1; /* very light beige */
+  color: #556b49; /* medium olive green */
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #b5c8a6; /* muted light green */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f0f2e8; /* soft beige */
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar .active {
+  border-bottom: 2px solid #f0f2e8;
+}
+
 /* Projects Section */
 .Projects-section {
-  flex: 1;
   max-width: 900px;
-  margin: 4rem auto;
-  padding: 0 2rem;
+  margin: 60px auto 20px;
+  padding: 0 20px;
   text-align: center;
 }
 
 .Projects-section h1 {
-  font-size: 2.8rem;
-  margin-bottom: 2.5rem;
-  color: #557a4b; /* medium olive green */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #76885a; /* medium light green */
   font-weight: 700;
-  letter-spacing: 1px;
 }
 
 /* Projects Container */
 .Projects-container {
-  background: #ffffff;
-  padding: 2.5rem 3rem;
-  border-radius: 20px;
-  box-shadow: 0 12px 24px rgba(85, 122, 75, 0.15); /* green shadow */
+  text-align: left;
+  background: #f9f9f0; /* very light beige */
+  padding: 25px;
+  border-left: 8px solid #b5c8a6; /* light green */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(181, 200, 166, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Projects-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(181, 200, 166, 0.3);
 }
 
 /* Project List */
 .Project-list {
-  list-style: none;
+  list-style-type: none;
   padding-left: 0;
 }
 
 .Project-list li {
-  background-color: #f9f8f6; /* light beige */
-  padding: 1.5rem;
   margin-bottom: 1.5rem;
-  border-left: 6px solid #9bbf86; /* soft pastel green */
-  border-radius: 15px;
-  box-shadow: 0 6px 10px rgba(85, 122, 75, 0.05);
-  text-align: left;
   font-size: 1rem;
-  line-height: 1.6;
-  transition: transform 0.3s ease;
-}
-
-.Project-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(85, 122, 75, 0.15);
+  color: #556b49;
 }
 
 .Project-list strong {
-  display: block;
-  font-size: 1.2rem;
-  color: #557a4b; /* medium olive green */
-  margin-bottom: 0.5rem;
+  color: #9aa978;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #76885a; /* medium light green */
+  color: #f0f2e8; /* soft beige */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-weight: 500;
 }
