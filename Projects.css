@@ -1,0 +1,55 @@
+/* Projects Section */
+.Projects-section {
+  flex: 1;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.Projects-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  color: #557a4b; /* medium olive green */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Projects Container */
+.Projects-container {
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(85, 122, 75, 0.15); /* green shadow */
+}
+
+/* Project List */
+.Project-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.Project-list li {
+  background-color: #f9f8f6; /* light beige */
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #9bbf86; /* soft pastel green */
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(85, 122, 75, 0.05);
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: transform 0.3s ease;
+}
+
+.Project-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(85, 122, 75, 0.15);
+}
+
+.Project-list strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #557a4b; /* medium olive green */
+  margin-bottom: 0.5rem;
+}
